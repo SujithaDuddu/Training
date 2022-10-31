@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+<body>
+<script>
+ let accno1=98765432;
+ let accno2=23456789;
+ let pswd1=23456;
+ let pswd2=67891;
+ let balance1=10000;
+ let balance2=20000;
+     function accno(){
+     var accno=prompt("Enter your account number");
+     if(accno==accno1){
+     var a=pswd1;
+     var b=balance1;
+     pwd(a,b);
+     }
+     else if(accno==accno2){
+     var a=pswd2;
+     var b=balance2
+     pwd(a,b);
+      }
+     else {
+     alert("Invalid account dtls");
+     accno();
+     }
+       }
+      function pwd(a,b){
+      var pswd=prompt("Enter your password");
+      if(pswd==a){
+       options(b);
+       }
+      else{
+      alert("Invalid password");
+      }
+        }
+     function options(b){
+     var option =prompt("chose the option\n1.balance \n 2.deposit \n 3.withdraw \n 4.exit");
+      switch(option){
+    case '1':balance(b);break;
+    case '2':deposit(b);break;
+    case '3':withdraw(b);break;
+    case '4':Exit(b);break;
+    default:alert ("invalid balance");
+    options();
+    }
+    }
+    function balance(b){
+    alert(`balance is:${b}`) ;
+    options(b);
+    }
+     function deposit(b){
+     deposit=prompt(" Enter the deposit  money:");
+     b+=parseInt(deposit) ;
+     alert(`balance amount in your account is:${b}`);
+     options(b);
+     }
+     function withdraw(b){
+     withdraw=prompt("Enter amount to withdraw:");
+     if(withdraw<b){
+      b-=parseInt(withdraw);
+     alert(`balance in your account is:${b}\n`);
+     options(b);
+     }
+     else{
+     alert("insufficient balance");
+     options(b);
+     }
+     }
+     function Exit(){
+     alert("Thankyou.....Visit Again");
+     accno();
+     }
+     accno();
+</script>
+</body>
+</html>
