@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>ATM</title>
+</head>
+<body>
+<script>
+function validation()
+{
+  var Accno1=98765432;
+  var Pwd1=23456;
+  var Accno2=23456789;
+  var Pwd2=67891;
+  var Balance1=10000;
+  var Balance2=20000;
+  var withdraw,depoist;
+  var i=0,c=0;
+  
+  while(true)
+  {
+  var s=prompt(" Enter your Account-no");
+       if(s==Accno1 ||s==Accno2)
+         {
+            var r=prompt(" Enter your Password");
+
+      if (s==Accno1 && r==Pwd1  || s==Accno2 && r==Pwd2)
+           {
+              alert("1.Check Balance\n2.With drawn\n3.Depoist\n4.Exist" );
+              	for( i=0;i<10;i++){
+              var run=prompt("enter any option:");
+              
+      
+       switch (run) {
+        case "1":
+            if(s==Accno1)
+            {
+            alert("Balance:"+Balance1);
+            }
+            else{
+          alert("balance:"+Balance2);}
+                 break;
+                 
+        case "2":
+            if(s==Accno1&&r==Pwd1){
+            alert("withdraw");
+         var withdraw=prompt("enter the  withdraw money");
+          if(Balance1>withdraw)
+            {
+            Balance1-=parseInt(withdraw)
+            alert("remaining money"+Balance1);}
+            
+            else 
+             {
+            alert("insufficient balance");
+            }
+            }
+            
+              if(s==Accno2&&r==Pwd2)
+              {
+               alert("withdraw");
+               var withdraw=prompt("enter the  withdraw money");
+           if(Balance2>withdraw)
+            {
+            Balance2-=parseInt(withdraw)
+            alert("remaining money"+Balance2);
+            }
+            else 
+             {
+            prompt("insufficient balance");
+            }
+            }
+             break;
+             
+         case "3":
+              if(s==Accno1&&r==Pwd1)
+              {
+            alert("Depoist");
+            var depoist=prompt("enter your  depoist money");
+            Balance1+=parseInt(depoist);
+            alert("Plz check your money after depoist"+Balance1);
+            }
+              if(s==Accno2&&r==Pwd2)
+              {
+            alert("Depoist");
+            var depoist=prompt("enter your  depoist money");
+            Balance2+=parseInt(depoist);
+            alert("Plz check your money after depoist"+Balance2);
+            }        
+                 break;
+            case "4":
+            alert("Thank You....Visit Again");
+            c++;
+           
+            }
+            if(c!=0)
+            {
+               break;
+               }
+              
+              
+            }}
+
+    
+     }
+     else
+     {
+         alert("incorrect Account-no");
+     }
+     }}
+     validation();
+</script>
+</body>
+</html>
