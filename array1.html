@@ -1,0 +1,95 @@
+<!Doctype html>
+<html>
+<body>
+<script>
+ var arr=[98765432,23456789];
+ var arr1=[23456,67891];
+ var arr2=[10000,20000];
+ var transaction1=[];
+ 
+     function accno()
+     {
+     	var accno=prompt("Enter your account number");
+     	if(accno==arr[0])
+     	{
+    	var a=arr1[0];
+    	var b=arr2[0];
+     	pwd(a,b);
+     	}
+     	else if(accno==arr[1])
+    	 {
+     	var a=arr1[1];
+     	var b=arr2[1];
+     	pwd(a,b);
+      	}
+     	else 
+     	{
+     	alert("Invalid account dtls");
+     	accno();
+     	}
+     }
+      function pwd(a,b){
+      var pswd=prompt("Enter your password");
+      if(pswd==a){
+       options(b);
+       }
+      else{
+      alert("Invalid password");
+      }
+        }
+     function options(b){
+     var option =prompt("chose the option\n1.balance \n 2.deposit \n 3.withdraw \n 4.Transactions\n 5.Exit");
+      switch(option){
+              case '1':balance(b);break;
+              case '2':deposit(b);break;
+              case '3':withdraw(b);break;
+              case '4':Transactions(b);break;
+              case '5':Exit(b);break;
+              
+              default:alert ("invalid balance");
+             options();
+                   }
+              }
+     function balance(b)
+     {
+       alert(`balance is:${b}`) ;
+       options(b);
+    }
+    function deposit(b)
+      {
+        deposit=prompt(" Enter the deposit  money:");
+        b+=parseInt(deposit) ;
+        alert(`balance amount in your account is:${b}`);
+        transaction1.push("deposit amount:"+deposit +"\n"+" After deposit ,the total balance is:"+b+"\n")
+          options(b);
+      }
+    function withdraw(b)
+      {
+     var withdraw=prompt("Enter amount to withdraw:");
+     if(withdraw<b)
+       {
+         b-=parseInt(withdraw);
+         alert(`balance in your account is:${b}\n`);
+         transaction1.push("withdraw amount:"+withdraw +"\n"+"After withdraw, the total balance is:"+b+"\n")
+           options(b);
+       }
+      else
+        {
+          alert("insufficient balance");
+           options(b);
+        }
+      }
+    function Transactions(b)
+      {
+        alert(transaction1);
+        options(b);
+      }
+    function Exit()
+      {
+       alert("Thankyou.....Visit Again");
+       accno();
+      }
+     accno();
+</script>
+</body>
+</html>
