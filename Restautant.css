@@ -1,0 +1,69 @@
+.Header
+{
+    width:900px;
+    height:30px;
+    background-color:rgb(211, 207, 207);
+    margin-top: 20px;
+}
+  
+
+.Maincontainer
+{
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:whitesmoke;
+}
+.leftcontainer
+{
+    padding:10px;
+    width:63%;
+    height:47%;
+    display:block;
+    background-color: aquamarine;
+    float:left;
+}
+.Items{
+    width:120px;
+    height:90px;
+    background-color:rgb(211, 207, 207);
+    border:none;
+    float:left;
+    margin-top:4px;
+    margin-left:5px;
+    
+    padding-left: 20px;
+   
+}
+.show
+{
+    padding: 5px;
+}
+.one
+{
+    float:left;  
+}
+.two
+{
+    float:right;
+    color:blue;
+}
+.rightcontainer
+{
+    float:right;
+    background-color: cornflowerblue;
+    margin-top:0px;
+    height: 430px;
+}
+.num
+{
+    width:300px;
+    height: 30px;
+}
+table,th{
+   
+    border-collapse: collapse;
+    width:50px;
+    padding:25px;
+
+}

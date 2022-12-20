@@ -1,0 +1,28 @@
+{
+    "items":[
+        {
+            "name":"idly",
+            "price":"20"
+        },
+        {
+            "name":"Dosa",
+            "price":"40"
+        },
+        {
+            "name":"puri",
+            "price":"60"
+        },
+        {
+            "name":"Wada",
+            "price":"30"
+        },
+        {
+            "name":"Nonveg-firedrice",
+            "price":"150"
+        },
+        {
+            "name":"Dosa",
+            "price":"40"
+        }
+    ]
+}
