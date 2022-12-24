@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="restaurant-task.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant task</title>
+</head>
+<body>
+    <div class="head">
+        <button type="button" class="order_btn" id="order_history" >Orders (0)</button>
+        <button type="button" class="current_btn" onclick="currentClass()">Current</button>
+        <table class="getdata_table" id="order_summary">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Total Amount</th>
+                <th>Get data</th>
+            </tr>
+            >
+        </table>
+    </div>
+    <div class="left_part">
+        
+    </div>
+    <div class="right_part">
+        <div>
+            <p class="text">Table 5|Max</p>
+             
+            <button Id="btnClear" class="clear">clear</button>
+            <br>
+            <input type="numeric" class="searchbar" id="numer" placeholder="Enter customer name here...">
+        </div><br>
+        <table  class="table"><br>
+            <tr>
+                <th>Item</th>
+                <th class="quan">Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tbody id="tbody">
+                
+            </tbody>
+            <tr>
+                <td>Discount</td>
+                <td>10%</td>
+                <td id="discount">xxxx</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td></td>
+                <td id="tax">81.9%</td>
+            </tr>
+        </table>
+        <br>
+            <button type="button" class="orde_ticket" id="order">Order Ticket(F9)</button>
+            <button type="button" class="charge_btn" id="charge">Charge 1,80,000/-(F9)</button>
+    </div>
+    <div class="history">
+       <h2 class="bill_head">Bill History</h2>
+         
+    </div>
+    <script src="Restaurant-Tasjk.js"></script>
+</body>
+</html>
