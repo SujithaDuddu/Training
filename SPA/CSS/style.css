@@ -1,0 +1,27 @@
+#app
+{
+   
+  
+    background-color: aqua;
+    width:600px;
+    height:580px;
+    padding:20px;
+    float:right;
+}
+.sidebar
+{
+  width:140px;
+  height:600px;
+  background-color:coral;
+  padding:10px;
+  float:left;
+  font-size: 20px;
+  
+}
+.container
+{
+  width:800px;
+  height:800px;
+  padding-left:60px;
+  
+}
