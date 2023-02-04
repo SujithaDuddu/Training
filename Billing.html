@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let total=0,price,amount, userInput;
+        for(let i=0;i<=10;i++){
+         userInput=prompt("Choose one of below:\n 1.coffee 2.Tea 3.Juice");
+        if(userInput==1)
+        {
+            var items=prompt("1.Expressco\n2.latte \n3.cappuccino")
+            prices=[2.50,3.50,4.00];
+            var quantity=prompt("Enter the quantity");
+            total=quantity*prices[items-1];
+            alert("total amount :"+total+"$");
+            
+        }
+   else if(userInput==2)
+    {
+        var items=prompt("1.Green Tea\n2.Black Tea \n3.Herbal Tea")
+            prices=[2.00,2.50,3.00];
+            var quantity=prompt("Enter the quantity");
+            total=quantity*prices[items-1];
+            alert("total amount :"+total+"$");
+            
+        }
+    else if(userInput==3)
+    {
+        var items=prompt("1.orange juice \n2.Apple juice \n3.Grape juice")
+            prices=[3.00,2.50,4.00];
+            var quantity=prompt("Enter the quantity");
+            total=quantity*prices[items-1];
+            alert("total amount :"+total+"$");
+            
+        }
+        }
+    </script>
+</body>
+</html>
